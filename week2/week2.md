@@ -13,7 +13,7 @@ Binary Classification 에서는 Linear regression 을 적용 시키기 어렵다
 
 => 가설이 1보다 커지거나 0보다 작아 질 수 있기 때문이다.
 
-**Logitics Hypothesis**
+**Logistic Hypothesis**
 
 sigmoid == logistic function (S 자가 누운듯한 그래프 모양)
 
@@ -25,7 +25,7 @@ H(x) = g(z) = 1 / ( 1 + e^-( W^T X ))
 
 여기서 T는 W벡터의 형태에 따라서 달라지는 것.
 
-## Section 5.2 - Logitics Regression의 cost 함수
+## Section 5.2 - Logistic Regression의 cost 함수
 
 이전에 사용했던 (Linear Regression) Cost function 을 사용해서 Gradient Decent 를 적용하면, 시작지점에 따라서, minimized 된 weight를 구할 수가 없다. (그래프 형태가 구불구불 해지기 때문)
 
@@ -43,7 +43,7 @@ c(h(X), y) = -y*log(H(x)) - (1 - y)*log(1 - H(x))
 Minimize cose = cost function 미분!
 ```
 
-## Section 6.1 - Softmax Regression (Multinomial Logitics Regression) multinomial 개념 소개
+## Section 6.1 - Softmax Regression (Multinomial Logistic Regression) multinomial 개념 소개
 
 [참고 링크][multinomial_classification]
 
@@ -53,7 +53,7 @@ Minimize cose = cost function 미분!
 
 각각의 변수는 당연히 독립적이라는 점.
 
-## Section 6.2 - Softmax Regression (Multinomial Logitics Regression) cost 함수 소개
+## Section 6.2 - Softmax Regression (Multinomial Logistic Regression) cost 함수 소개
 
 어떤 변수에 대해서 label값이 나오는데 label 값의 합은 1이다.
 

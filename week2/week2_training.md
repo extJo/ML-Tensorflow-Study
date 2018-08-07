@@ -165,6 +165,8 @@ with tf.Session() as sess:
     print('--------------')
 
     # Testing & One-hot encoding
+    # sigmoid 된 값이 a에 출력
+    # argmax는 one-hot encoding 된 결과에서 1을 가지는 axis를 반환
     a = sess.run(hypothesis, feed_dict={X: [[1, 11, 7, 9]]})
     print(a, sess.run(tf.argmax(a, 1)))
 
